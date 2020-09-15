@@ -1,0 +1,35 @@
+{
+  "name": "praveen-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "/",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.5.2",
+    "namor": "1.0.1",
+    "react": "15.5.3",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "15.5.3",
+    "react-router-dom": "^5.2.0",
+    "react-table": "6.7.0-alpha-0",
+    "react-tooltip": "3.10.0",
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "keywords": [
+    "IMDB"
+  ],
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"node src/backendapp.js\"",
+    "startui": "react-scripts start",
+    "startbackend": "node src/backendapp.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "react-scripts": "1.0.0"
+  }
+}
