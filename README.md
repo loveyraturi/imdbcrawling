@@ -8,5 +8,4 @@
 1> Go to project root folder and run ```npm install```
 2> In order to run server run ```npm run start```
 3> Go to browser and hit url ```http://localhost:3000
-4> Hover over s.no to get further details on tooltip
-5> You are good to go enjoy
+4> You are good to go enjoy

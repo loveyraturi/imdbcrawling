@@ -15,7 +15,6 @@ function parseData(page, elementItem) {
     dom(elementItem).
     find('tr').
     each((i, elem) => {
-        console.loc
         let resultArray = [];
         dom(elem).
         find('td').
@@ -71,7 +70,6 @@ async function main() {
     }
     var json = JSON.stringify(resultData);
     fs.writeFile('./public/assets/myjsonfile.json', json, 'utf8', (resp) => {
-        console.log(resp)
         process.exit(0);
     });
 
